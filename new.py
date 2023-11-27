@@ -3,10 +3,10 @@ from linebot import ( LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import os
-from dotenv import load_dotenv #使用.env文件需要加載的
+# from dotenv import load_dotenv #使用.env文件需要加載的
 from function import *
 
-load_dotenv() # 加入 .env 文件中的環境變數
+# load_dotenv() # 加入 .env 文件中的環境變數
 app = Flask(__name__)
 
 # 使用os獲取環境變數的值
